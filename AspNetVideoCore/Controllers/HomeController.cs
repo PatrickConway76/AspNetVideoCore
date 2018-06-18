@@ -22,7 +22,8 @@ namespace AspNetVideoCore.Controllers
 				{
 					Id = video.Id,
 					Title = video.Title,
-					Genre = video.Genre.ToString()
+					Genre = video.Genre.ToString(),
+					ProductionCompany = video.ProductionCompany
 				});
 			return View(model);
 		}
@@ -40,7 +41,8 @@ namespace AspNetVideoCore.Controllers
 				{
 					Id = model.Id,
 					Title = model.Title,
-					Genre = model.Genre.ToString()
+					Genre = model.Genre.ToString(),
+					ProductionCompany = model.ProductionCompany
 				});
 			}
 		}
@@ -59,7 +61,8 @@ namespace AspNetVideoCore.Controllers
 				var video = new Video
 				{
 					Title = model.Title,
-					Genre = model.Genre
+					Genre = model.Genre,
+					ProductionCompany = model.ProductionCompany
 				};
 
 				_videos.Add(video);

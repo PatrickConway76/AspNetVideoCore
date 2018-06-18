@@ -9,5 +9,6 @@ namespace AspNetVideoCore.ViewModels
 		[Required, MinLength(3), MaxLength(80)]
 		public string Title { get; set; }
 		public Genres Genre { get; set; }
+		public string ProductionCompany { get; set; }
 	}
 }
